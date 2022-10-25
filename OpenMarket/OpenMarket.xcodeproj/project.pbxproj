@@ -13,6 +13,9 @@
 		C70FB10225BEF61C00C9924E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70FB10025BEF61C00C9924E /* Main.storyboard */; };
 		C70FB10425BEF61D00C9924E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70FB10325BEF61D00C9924E /* Assets.xcassets */; };
 		C70FB10725BEF61D00C9924E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C70FB10525BEF61D00C9924E /* LaunchScreen.storyboard */; };
+		FA0619B62907B0B4006FD4D5 /* InquiryProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0619B52907B0B4006FD4D5 /* InquiryProduct.swift */; };
+		FA0619B82907B583006FD4D5 /* PageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0619B72907B583006FD4D5 /* PageInfo.swift */; };
+		FA0619BA2907BEA3006FD4D5 /* ProductInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0619B92907BEA3006FD4D5 /* ProductInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		C70FB10325BEF61D00C9924E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C70FB10625BEF61D00C9924E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C70FB10825BEF61D00C9924E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA0619B52907B0B4006FD4D5 /* InquiryProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryProduct.swift; sourceTree = "<group>"; };
+		FA0619B72907B583006FD4D5 /* PageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageInfo.swift; sourceTree = "<group>"; };
+		FA0619B92907BEA3006FD4D5 /* ProductInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				C70FB10325BEF61D00C9924E /* Assets.xcassets */,
 				C70FB10525BEF61D00C9924E /* LaunchScreen.storyboard */,
 				C70FB10825BEF61D00C9924E /* Info.plist */,
+				FA0619B52907B0B4006FD4D5 /* InquiryProduct.swift */,
+				FA0619B72907B583006FD4D5 /* PageInfo.swift */,
+				FA0619B92907BEA3006FD4D5 /* ProductInfo.swift */,
 			);
 			path = OpenMarket;
 			sourceTree = "<group>";
@@ -140,6 +149,9 @@
 				C70FB0FF25BEF61C00C9924E /* ViewController.swift in Sources */,
 				C70FB0FB25BEF61C00C9924E /* AppDelegate.swift in Sources */,
 				C70FB0FD25BEF61C00C9924E /* SceneDelegate.swift in Sources */,
+				FA0619BA2907BEA3006FD4D5 /* ProductInfo.swift in Sources */,
+				FA0619B62907B0B4006FD4D5 /* InquiryProduct.swift in Sources */,
+				FA0619B82907B583006FD4D5 /* PageInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
