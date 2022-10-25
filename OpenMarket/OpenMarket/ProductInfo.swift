@@ -13,16 +13,13 @@ struct ProductInfo: Decodable {
     var name: String
     var description: String
     var thumbnail: String
+    var currency: String
     var price: Int
     var bargainPrice: Int
     var discountedPrice: Int
     var stock: Int
-    var createdAt: Date
-    var issuedAt: Date
-    
-    enum currency {
-        
-    }
+    var createdAt: String
+    var issuedAt: String
     
     enum CodingKeys: String, CodingKey {
         case id
