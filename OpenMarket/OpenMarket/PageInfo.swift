@@ -16,17 +16,17 @@ struct PageInfo: Decodable {
     var lastPage: Int
     var hasNext: Bool
     var hasPrev: Bool
-    var pages: Array<Int>
+    var pages: Array<String>
     
     enum CodingKeys: String, CodingKey {
+        case pageNo
+        case itemsPerPage
+        case totalCount
         case offset
         case limit
+        case lastPage
+        case hasNext
+        case hasPrev
         case pages
-        case pageNo = "page_no"
-        case itemsPerPage = "items_per_page"
-        case totalCount = "total_count"
-        case lastPage = "last_page"
-        case hasNext = "has_next"
-        case hasPrev = "has_prev"
     }
 }
