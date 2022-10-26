@@ -1,13 +1,3 @@
-//
-//  OpenMarket - ViewController.swift
-//  Created by yagom. 
-//  Copyright © yagom. All rights reserved.
-// 
-
-import UIKit
-
-class ViewController: UIViewController {
-    let data = """
 {
   "pageNo": 1,
   "itemsPerPage": 20,
@@ -150,24 +140,3 @@ class ViewController: UIViewController {
     }
   ],
 }
-""".data(using: .utf8)!
-    
-    var pageData: PageInfo?
-    
-    func jsonParsingData() {
-//        guard let dataAsset = NSDataAsset(name: "Mock") else { return }
-        let jsonDecoder = JSONDecoder()
-        pageData = try? jsonDecoder.decode(PageInfo.self, from: data)
-        
-        print(pageData?.pageNo)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        jsonParsingData()
-        
-    }
-
-
-}
-
