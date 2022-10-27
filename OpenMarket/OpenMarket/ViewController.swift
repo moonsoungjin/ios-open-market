@@ -149,15 +149,26 @@ class ViewController: UIViewController {
       "issued_at": "2021-12-26T00:00:00.00"
     }
   ],
+  "last_page": 1,
+  "has_next": false,
+  "has_prev": false
 }
 """.data(using: .utf8)!
     
     var pageData: PageInfo?
     
     func jsonParsingData() {
-//        guard let dataAsset = NSDataAsset(name: "Mock") else { return }
+        guard let dataAsset = NSDataAsset(name: "Mock") else {
+            print("error")
+            return
+        }
         let jsonDecoder = JSONDecoder()
-        pageData = try? jsonDecoder.decode(PageInfo.self, from: data)
+        
+        do {
+            pageData = try jsonDecoder.decode(PageInfo.self, from: dataAsset.data)
+        } catch {
+            print(error.localizedDescription)
+        }
         
         print(pageData?.pageNo)
     }
