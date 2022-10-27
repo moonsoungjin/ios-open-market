@@ -16,7 +16,7 @@ struct PageInfo: Decodable {
     var lastPage: Int
     var hasNext: Bool
     var hasPrev: Bool
-    var pages: Array<String>
+    var pages: [ProductInfo]
     
     enum CodingKeys: String, CodingKey {
         case pageNo
