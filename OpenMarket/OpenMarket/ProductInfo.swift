@@ -10,14 +10,14 @@ import Foundation
 struct ProductInfo: Decodable {
     var id: Int
     var vendorId: Int
-    var vendorName: String
+//    var vendorName: String
     var name: String
-    var description: String
+//    var description: String
     var thumbnail: String
     var currency: String
     var price: Double
-    var bargainPrice: Double
-    var discountedPrice: Double
+    var bargainPrice: Int
+    var discountedPrice: Int
     var stock: Int
     var createdAt: String
     var issuedAt: String
@@ -25,9 +25,9 @@ struct ProductInfo: Decodable {
     enum CodingKeys: String, CodingKey {
         case id
         case vendorId = "vendor_id"
-        case vendorName
+//        case vendorName
         case name
-        case description
+//        case description
         case thumbnail
         case currency
         case price
