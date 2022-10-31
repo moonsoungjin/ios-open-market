@@ -21,8 +21,6 @@ class ViewController: UIViewController {
         } catch {
             print(error.localizedDescription)
         }
-        
-        print(pageData?.pageNo)
     }
     
     override func viewDidLoad() {
