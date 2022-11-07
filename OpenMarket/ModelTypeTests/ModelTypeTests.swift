@@ -17,15 +17,11 @@ final class ModelTypeTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func test_Mock_데이터의_페이지_번호를_가져오면_1이다() {
-        // given
+    func test_JSON_파싱이_되는지() {
+        let pageData = jsonParsing()
         
-
-        // when
-        let result = 1
-        
-        // then
-        XCTAssertEqual(mockDataPageNumber, result)
+        print(pageData)
     }
 
 }
+
